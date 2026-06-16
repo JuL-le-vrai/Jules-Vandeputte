@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jules Vandeputte</title>
+  <meta name="description" content="Jules Vandeputte — Research engineer in deep learning for population genomics at CBGP, INRAE." />
+  <link rel="manifest" href="https://jul-le-vrai.github.io/site.webmanifest" />
+  <link rel="stylesheet" href="https://jul-le-vrai.github.io/styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="https://jul-le-vrai.github.io">Jules Vandeputte</a>
+
+      <nav class="menu" aria-label="Main navigation">
+        <a href="https://jul-le-vrai.github.io/">Home</a>
+        <a href="https://jul-le-vrai.github.io/about/">About me</a>
+        <a href="https://jul-le-vrai.github.io/research/">Research</a>
+        <a href="https://jul-le-vrai.github.io/publication/">Publications</a>
+        <a href="https://jul-le-vrai.github.io/cv/">C.V.</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="home" class="hero">
+      <div>
+        <h1>Jules Vandeputte</h1>
+
+        <p class="subtitle">Research engineer in deep learning for population genomics</p>
+
+        <p class="lead">
+          Recently recruited as a research engineer in CBGP (INRAE), based in Montpellier, France. My research focuses on the application of deep learning techniques to population genomics.
+        </p>
+
+        <ul class="socials">
+          <li><a href="https://fr.linkedin.com/in/jules-vandeputte-074b90131/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://scholar.google.com/citations?user=KjdYu64AAAAJ&hl=fr" target="_blank" rel="noopener noreferrer">Scholar</a></li>
+          <li><a href="https://orcid.org/0000-0001-9056-4640" target="_blank" rel="noopener noreferrer">ORCID</a></li>
+          <li><a href="mailto:jules.vandeputte@inrae.fr">Contact</a></li>
+        </ul>
+
+      <aside class="profile-card">
+        <div class="photo-block">
+          <img class="profile-photo" src="https://lombardata.github.io/Matteo-Contini/img/matteo-contini.jpg" alt="Portrait of Matteo Contini." />
+        </div>
+
+        <div class="hero-side-grid">
+          <div class="card compact-card">
+            <h3>Education</h3>
+            <div class="mini-entry"><strong>PhD Student</strong><span>INRAE · 2020–2023</span></div>
+            <div class="mini-entry"><strong>Machine Learning</strong><span>Université Paris Dauphine · 2016–2017</span></div>
+            <div class="mini-entry"><strong>Data Engineering</strong><span>AgroParisTech · 2016–2017</span></div>
+            <div class="mini-entry"><strong>Agronomy Engineering</strong><span>ENSAIA · 2014–2016</span></div>
+
+          </div>
+
+          <div class="card compact-card">
+            <h3>Experience</h3>
+            <div class="mini-entry"><strong>CBGP (INRAE)</strong><span>Research engineer in DL for genomics · Since 2024</span></div>
+            <div class="mini-entry"><strong>IROKO (INRIA) - Pl@ntNet team</strong><span>PostDoctoral researcher · 2023–2024</span></div>
+            <div class="mini-entry"><strong>MIA Paris-Saclay (INRAE)</strong><span>PhD student · 2020–2023</span></div>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script>
+    function toggleNews() {
+      const hiddenItems = document.querySelectorAll(".hidden-news");
+      const button = document.querySelector(".news-toggle");
+
+      if (!hiddenItems.length || !button) return;
+
+      hiddenItems.forEach(item => item.classList.toggle("show"));
+
+      const isOpen = hiddenItems[0].classList.contains("show");
+      button.textContent = isOpen ? "Hide older news" : "Click to see older news";
+    }
+  </script>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
